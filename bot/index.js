@@ -1,5 +1,5 @@
 console.log("🚀 BOT SEDANG INITIALIZING...");
-require('dotenv').config(); 
+require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') });
 
 const TOKEN = process.env.TELEGRAM_TOKEN;
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
