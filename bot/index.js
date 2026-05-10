@@ -1,3 +1,4 @@
+console.log("🚀 BOT SEDANG INITIALIZING...");
 require('dotenv').config(); 
 
 const TOKEN = process.env.TELEGRAM_TOKEN;
