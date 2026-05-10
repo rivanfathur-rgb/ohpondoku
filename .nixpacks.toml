@@ -1,8 +1,8 @@
 [phases.setup]
-nixPkgs = ["nodejs"]
+nixPkgs = ["nodejs-18_x", "npm"] # Paksa instal Node.js versi 18 dan NPM
 
 [phases.install]
-cmds = ["npm install --prefix bot"]
+cmds = ["npm install --prefix bot"] # Instal library yang ada di folder bot
 
 [start]
-cmd = "node bot/index.js"
+cmd = "node bot/index.js" # Jalankan file bot kamu
