@@ -1,0 +1,8 @@
+{
+  "name": "web-pondok-root",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node bot/index.js",
+    "build": "npm install --prefix bot"
+  }
+}
