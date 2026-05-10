@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pondok Pesantren Nama Pondok</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- buat animasi loading -->
+    <div class="loader-wrapper">
+        <div class="loader-content">
+            <img src="static/img/logo.png" alt="Logo almamater" class="loader-logo-modern">
+            <div class="loader-text">NAMA PONDOK</div>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+<!-- ==============================
+------ HEADER TOPBAR NAVBAR ------
+================================= -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +62 857 9352 2953</span>
+                <span><i class="fas fa-envelope"></i> info@Nama Pondok.sch.id</span>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/pesantren_Nama Pondok/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@Nama Pondok_id5112"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+    <nav class="container nav-mobile-wrapper">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+        <div class="logo">
+            <img src="static/img/logo.png" alt="Logo">
+        </div>
+
+        <div class="search-icon-mobile">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <ul class="nav-links" id="nav-list">
+            <li><a href="index.html">Beranda</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-btn">Tentang <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="tentang.html">Profil Pondok</a></li>
+                    <li><a href="sejarah.html">Sejarah Yayasan</a></li>
+                    <li><a href="cabang.html">Kampus Cabang</a></li>
+                </ul>
+            </li>
+            <li><a href="pendidikan.html">Pendidikan</a></li>
+            <li><a href="warta.html">Warta</a></li>
+            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+        </ul>
+
+<!-- INI BUAT SEARCH OVERLAY -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-bar-container">
+                <input type="text" id="searchInput" placeholder="Cari tulisan atau santri...">
+                <button id="closeSearch"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+<!-- INI SEARCH SUGGESTIONS -->
+        <div id="searchSuggestions" class="suggestions-box"></div>
+    </nav>
+    </header>
+<!-- ===============
+------ SECTION ------
+=============== -->
+    <section class="branch-hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <span class="sub-title">Ekspansi Kebaikan</span>
+        <h1>Membangun Peradaban <br><span>Hingga Pelosok Negeri</span></h1>
+        <p>Nama Pondok berkomitmen untuk meluaskan akses pendidikan Al-Qur'an dan kemandirian santri melalui pengembangan cabang di masa depan.</p><br><br>
+    </div>
+</section>
+
+<section class="branch-details">
+    <div class="container">
+        <div class="glass-card main-info">
+            <div class="badge-status">
+                <span class="dot"></span> Kampus Utama
+            </div>
+            <h2>Pusat: Nama Pondok London</h2>
+            <p>Berfokus pada integrasi kurikulum tahfidz dan teknologi. Saat ini menjadi pusat pengembangan metode pembelajaran untuk seluruh calon cabang kami.</p>
+        </div>
+
+        <div class="development-plan">
+            <div class="plan-header">
+                <h3>Rencana Strategis Cabang</h3>
+                <p>Kami sedang melakukan riset lokasi dan penggalangan wakaf untuk pembangunan tahap pertama.</p>
+            </div>
+            
+            <div class="funding-card">
+                <div class="funding-info">
+                    <span>Dana Pembangunan Terkumpul</span>
+                    <span class="percentage">15%</span>
+                </div>
+                <div class="progress-bar-modern">
+                    <div class="progress-glow" style="width: 15%;"></div>
+                </div>
+                <br><p class="funding-note">Target: Pembangunan Cabang 06 (Mesopotamia / New York)</p>
+            </div>
+        </div>
+
+        <div class="cta-modern">
+            <div class="cta-text">
+                <h2>Jadi Pewakaf Abadi</h2>
+                <p>Abadikan harta Anda dalam bangunan yang setiap detiknya digunakan untuk melantunkan ayat-ayat suci Al-Qur'an.</p>
+            </div>
+            <div class="cta-action">
+                <button id="btnWakaf" class="btn-premium">
+                    <span class="icon">💎</span> Donasi Pembangunan
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ===============
+------ FOOTER ------
+=============== -->
+<footer>
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h3>Hubungi Kami</h3>
+            <div class="footer-line"></div>
+            <p><i class="fas fa-envelope"></i> info@almamater.sch.id</p>
+            <p><i class="fas fa-phone"></i> +62 857 9352 2953</p>
+            <p><i class="fas fa-map-marker-alt"></i> Lembah Sungai Tigris, Prapatan Asia Barat, 32°30N 44°30E</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Link Kami</h3>
+            <div class="footer-line"></div>
+            <ul class="footer-links">
+                <li><a href="syaratnketentuan.html">Syarat & Ketentuan</a></li>
+                <li><a href="kebijakan.html">Kebijakan Kami</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="caradonat.html">Cara Donasi</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Pembayaran</h3>
+            <div class="footer-line"></div>
+            <div class="payment-grid">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Logo_QRIS.svg" alt="QRIS">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia.svg" alt="BCA">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Bank_Mandiri_logo_2016.svg" alt="Mandiri">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Gopay_logo.svg" alt="Gopay">
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>Subscribe</h3>
+            <div class="footer-line"></div>
+            <p>Jangan lupa berlangganan untuk terus mendapatkan informasi terbaru dan konten eksklusif kami.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/pesantren_Nama Pondok/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@Nama Pondok_id5112"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; Semua hak dilindungi 2026 Nama Pondok</p>
+    </div>
+</footer>
+
+<a href="https://wa.me/628XXXXXXXXXX" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="static/js/global-nav.js"></script>
+<script src="static/js/c.js"></script>
+</body>
+</html>

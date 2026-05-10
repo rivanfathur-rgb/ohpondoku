@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="static/js/pirman.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Donasi</title>
+    <style>
+        :root { --primary: #006644; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0; 
+            padding: 20px; 
+            display: flex; 
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: background 0.8s ease-in-out; 
+        }
+        
+        .main-container { 
+            background: white; 
+            max-width: 900px; 
+            width: 100%; 
+            border-radius: 20px; 
+            overflow: hidden; 
+            display: flex; 
+            flex-wrap: wrap;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .content-left { 
+            flex: 1; 
+            min-width: 300px; 
+            padding: 40px; 
+            background: #f9fdfb;
+            border-right: 1px solid #eee;
+        }
+
+        /* PERBAIKAN: Tambahkan pembungkus kanan agar tidak berantakan */
+        .content-right {
+            flex: 1;
+            min-width: 300px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .img-placeholder {
+            width: 100%;
+            height: 220px;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #eee;
+            margin-bottom: 20px;
+        }
+
+        .qr-box {
+            border: 2px dashed #bbb;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .qris-img-main {
+            width: 100%;        
+            max-width: 180px;   /* Gue kecilin dikit biar lebih pas */
+            height: auto;       
+            margin: 0 auto;     
+            display: block;
+            border-radius: 10px; 
+        }
+
+        .input-group { text-align: left; margin-bottom: 15px; }
+        label { font-weight: bold; font-size: 14px; color: #444; }
+        input { width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
+        
+        button { 
+            width: 100%; padding: 15px; background: var(--primary); color: white; 
+            border: none; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 16px;
+            transition: 0.3s;
+        }
+        button:hover { background: #004d33; transform: translateY(-2px); }
+
+        @media (max-width: 768px) {
+            .content-left { border-right: none; border-bottom: 1px solid #eee; }
+            .content-right { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="content-left">
+        <div class="img-placeholder" id="gambar-paket"></div>
+        <h2 id="judul-display">Paket Donasi</h2>
+        <p id="deskripsi-paket">Terima kasih atas niat baik Anda. Donasi ini akan disalurkan sepenuhnya untuk keperluan santri dan pembangunan pondok.</p>
+        <div style="background: #e6f3ef; padding: 15px; border-radius: 8px;">
+            <span style="color: #666;">Nominal Donasi:</span><br>
+            <strong style="font-size: 24px; color: var(--primary);">Rp <span id="harga-display">0</span></strong>
+        </div>
+    </div>
+
+    <div class="content-right">
+        <div class="qr-box">
+            <img src="static/img/qris-prototype-rivan.png" class="qris-img-main">
+            <p style="font-size: 12px; color: #777; margin-top: 10px;">
+                Scan QRIS Prototype di atas
+            </p>
+        </div>
+
+        <form id="form-donasi">
+            <div class="input-group">
+                <label>Nama Lengkap Donatur</label>
+                <input type="text" name="nama" required placeholder="Contoh: Abdullah">
+            </div>
+            <div class="input-group">
+                <label>Nomor WhatsApp</label>
+                <input type="number" name="kontak" required placeholder="08xxxxxxxxx">
+            </div>
+            <button type="submit">Konfirmasi Sudah Bayar</button>
+        </form>
+    </div>
+</div>
+
+<script src="static/js/d.js"></script>
+</body>
+</html>

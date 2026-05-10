@@ -1,0 +1,1 @@
+document['addEventListener']('DOMContentLoaded',function(){const o=document['getElementById']('btnWakaf');o&&o['addEventListener']('click',function(){window['location']['href']='donasi.html';});});

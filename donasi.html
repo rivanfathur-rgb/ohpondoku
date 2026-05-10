@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pondok Pesantren Nama Pondok</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="static/js/pirman.js"></script>
+</head>
+<body>
+    <!-- buat animasi loading python -m http.server 8000-->
+    <div class="loader-wrapper">
+        <div class="loader-content">
+            <img src="static/img/logo.png" alt="Logo almamater" class="loader-logo-modern">
+            <div class="loader-text">NAMA PONDOK</div>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+<!-- ==============================
+------ HEADER TOPBAR NAVBAR ------
+================================= -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +62 XXX XXXX XXXX</span>
+                <span><i class="fas fa-envelope"></i> info@Nama Pondok.sch.id</span>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/pesantren_Nama Pondok/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@Nama Pondok_id5112"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+    <nav class="container nav-mobile-wrapper">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+        <div class="logo">
+            <img src="static/img/logo.png" alt="Logo">
+        </div>
+
+        <div class="search-icon-mobile">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <ul class="nav-links" id="nav-list">
+            <li><a href="index.html">Beranda</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-btn">Tentang <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="tentang.html">Profil Pondok</a></li>
+                    <li><a href="sejarah.html">Sejarah Yayasan</a></li>
+                    <li><a href="cabang.html">Kampus Cabang</a></li>
+                </ul>
+            </li>
+            <li><a href="pendidikan.html">Pendidikan</a></li>
+            <li><a href="warta.html">Warta</a></li>
+            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+        </ul>
+<!-- INI BUAT SEARCH OVERLAY -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-bar-container">
+                <input type="text" id="searchInput" placeholder="Cari tulisan atau santri...">
+                <button id="closeSearch"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+<!-- INI SEARCH SUGGESTIONS -->
+        <div id="searchSuggestions" class="suggestions-box"></div>
+    </nav>
+    </header>
+<!-- ===============
+------ SECTION ------
+=============== -->
+    <section class="donation-hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <span class="sub-title">Investasi Akhirat</span>
+        <h1>Lumbung Pahala <br><span>Santri Nama Pondok</span></h1>
+        <p>Setiap rupiah yang Anda titipkan adalah investasi jariyah untuk mencetak generasi penghafal Al-Qur'an dan pemimpin masa depan.</p>
+    </div>
+</section>
+
+<section class="donation-body">
+    <div class="container">
+        <div class="section-header">
+            <h2>Pilih Paket Kebaikan</h2>
+            <p>Pilih program yang ingin Anda bantu hari ini</p>
+        </div>
+
+        <div class="donation-grid">
+            <div class="donation-card">
+                <div class="card-badge">Paling Populer</div>
+                <div class="card-icon">🍲</div>
+                <h3>iftar Santri</h3>
+                <p>Bantu konsumsi harian santri yatim & dhuafa agar fokus menghafal.</p>
+                <div class="price">Rp 50.000 <span>/ paket</span></div>
+                <a href="detail-donasi.html?paket=iftar&harga=50.000" class="btn-donate-card">Pilih Donasi</a>
+            </div>
+
+            <div class="donation-card featured">
+                <div class="card-icon">📖</div>
+                <h3>Cahaya Qur'an</h3>
+                <p>Pengadaan Mushaf Al-Qur'an dan Kitab Kuning untuk sarana belajar.</p>
+                <div class="price">Rp 150.000 <span>/ paket</span></div>
+                <a href="detail-donasi.html?paket=quran&harga=150.000" class="btn-donate-card gold">Pilih Donasi</a>
+            </div>
+
+            <div class="donation-card">
+                <div class="card-icon">🏗️</div>
+                <h3>Wakaf Cabang 06</h3>
+                <p>Patungan semen & batu bata untuk pembangunan kampus cabang baru.</p>
+                <div class="price">Rp 500.000 <span>/ paket</span></div>
+                <a href="detail-donasi.html?paket=wakaf&harga=500.000" class="btn-donate-card">Pilih Donasi</a>
+            </div>
+        </div>
+
+        <div class="bank-info-container">
+            <div class="bank-header">
+                <i class="fas fa-university"></i>
+                <h3>Metode Pembayaran Resmi</h3>
+            </div>
+            <div class="bank-placeholder">
+                <p>Saat ini sistem pembayaran otomatis sedang disinkronkan dengan rekening resmi Yayasan.</p>
+                <div class="placeholder-box">
+                    <a href="caradonat.html" class="btn-donate-card"><span>MENUNGGU VERIFIKASI ADMIN</span></a>
+                </div>
+                <p class="note">*Silakan hubungi admin untuk jalur donasi manual sementara.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===============
+------ FOOTER ------
+=============== -->
+<footer>
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h3>Hubungi Kami</h3>
+            <div class="footer-line"></div>
+            <p><i class="fas fa-envelope"></i> info@almamater.sch.id</p>
+            <p><i class="fas fa-phone"></i> +62 XXX XXXX XXXX</p>
+            <p><i class="fas fa-map-marker-alt"></i> Lembah Sungai Tigris, Prapatan Asia Barat, 32°30N 44°30E</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Link Kami</h3>
+            <div class="footer-line"></div>
+            <ul class="footer-links">
+                <li><a href="syaratnketentuan.html">Syarat & Ketentuan</a></li>
+                <li><a href="kebijakan.html">Kebijakan Kami</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="caradonat.html">Cara Donasi</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Pembayaran</h3>
+            <div class="footer-line"></div>
+            <div class="payment-grid">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Logo_QRIS.svg" alt="QRIS">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia.svg" alt="BCA">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Bank_Mandiri_logo_2016.svg" alt="Mandiri">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Gopay_logo.svg" alt="Gopay">
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>Subscribe</h3>
+            <div class="footer-line"></div>
+            <p>Jangan lupa berlangganan untuk terus mendapatkan informasi terbaru dan konten eksklusif kami.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/pesantren_Nama Pondok/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@Nama Pondok_id5112"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; Semua hak dilindungi 2026 Nama Pondok</p>
+    </div>
+</footer>
+
+<a href="https://wa.me/628XXXXXXXXXX" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="static/js/global-nav.js"></script>
+<script src="static/js/c.js"></script>
+</body>
+</html>

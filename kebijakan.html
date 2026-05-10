@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Kami</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="static/js/pirman.js"></script>
+</head>
+<body>
+    <!-- buat animasi loading -->
+    <div class="loader-wrapper">
+        <div class="loader-content">
+            <img src="static/img/logo.png" alt="Logo almamater" class="loader-logo-modern">
+            <div class="loader-text">NAMA PONDOK</div>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <header>
+    <nav class="container nav-mobile-wrapper">
+        <div class="menu-toggle" id="mobile-menu">
+           <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+
+        <div class="logo">
+            <img src="static/img/logo.png" alt="Logo">
+        </div>
+
+        <div class="search-icon-mobile">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <ul class="nav-links" id="nav-list">
+            <li><a href="index.html">Beranda</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-btn">Tentang <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="tentang.html">Profil Pondok</a></li>
+                    <li><a href="sejarah.html">Sejarah Yayasan</a></li>
+                    <li><a href="cabang.html">Kampus Cabang</a></li>
+                </ul>
+            </li>
+            <li><a href="pendidikan.html">Pendidikan</a></li>
+            <li><a href="warta.html">Warta</a></li>
+            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+        </ul>
+<!-- INI BUAT SEARCH OVERLAY -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-bar-container">
+                <input type="text" id="searchInput" placeholder="Cari tulisan atau santri...">
+                <button id="closeSearch"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+<!-- INI SEARCH SUGGESTIONS -->
+        <div id="searchSuggestions" class="suggestions-box"></div>
+    </nav>
+    </header>
+
+<section class="legal-hero-bg">
+    <div class="legal-glass-card">
+        <h2 class="legal-main-title">Kebijakan Kami</h2>
+        <h3 class="legal-sub-title">Kebijakan Privasi dan Penggunaan Data namapondok.org</h3>
+        
+        <div class="legal-content-list">
+            <div class="legal-item">
+                <h4 class="legal-item-title">1. Informasi yang Kami Kumpulkan</h4>
+                <p class="legal-item-text">
+                    Kami mengumpulkan informasi identitas pribadi ketika Anda mendaftarkan calon santri, melakukan donasi, atau mengisi formulir kontak. Informasi ini meliputi nama lengkap, alamat, alamat email, nomor telepon, dan data akademik santri.
+                </p>
+            </div>
+
+            <div class="legal-item">
+                <h4 class="legal-item-title">2. Penggunaan Informasi</h4>
+                <p class="legal-item-text">
+                    Setiap informasi yang kami kumpulkan dari Anda dapat digunakan untuk memproses pendaftaran, mempersonalisasi pengalaman Anda, meningkatkan layanan situs web kami, serta mengirimkan informasi berkala terkait status pendaftaran atau program pondok.
+                </p>
+            </div>
+
+            <div class="legal-item">
+                <h4 class="legal-item-title">3. Perlindungan Informasi</h4>
+                <p class="legal-item-text">
+                    Kami menerapkan berbagai langkah keamanan untuk menjaga keamanan informasi pribadi Anda. Kami tidak menjual, memperdagangkan, atau memberikan informasi pribadi Anda kepada pihak luar tanpa izin, kecuali untuk tujuan administrasi resmi pendidikan yang diatur oleh undang-undang.
+                </p>
+            </div>
+
+            <div class="legal-item">
+                <h4 class="legal-item-title">4. Persetujuan Anda</h4>
+                <p class="legal-item-text">
+                    Dengan menggunakan situs kami, Anda menyatakan setuju dengan kebijakan privasi kami. Jika terdapat perubahan pada kebijakan ini, kami akan memperbarui halaman ini secara berkala.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h3>Hubungi Kami</h3>
+            <div class="footer-line"></div>
+            <p><i class="fas fa-envelope"></i> info@almamater.sch.id</p>
+            <p><i class="fas fa-phone"></i> +62 XXX XXXX XXXX</p>
+            <p><i class="fas fa-map-marker-alt"></i> Lembah Sungai Tigris, Prapatan Asia Barat, 32°30N 44°30E</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Link Kami</h3>
+            <div class="footer-line"></div>
+            <ul class="footer-links">
+                <li><a href="syaratnketentuan.html">Syarat & Ketentuan</a></li>
+                <li><a href="kebijakan.html">Kebijakan Kami</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="caradonat.html">Cara Donasi</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Pembayaran</h3>
+            <div class="footer-line"></div>
+            <div class="payment-grid">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Logo_QRIS.svg" alt="QRIS">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia.svg" alt="BCA">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Bank_Mandiri_logo_2016.svg" alt="Mandiri">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Gopay_logo.svg" alt="Gopay">
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>Subscribe</h3>
+            <div class="footer-line"></div>
+            <p>Jangan lupa berlangganan untuk terus mendapatkan informasi terbaru dan konten eksklusif kami.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/pesantren_Nama Pondok/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@Nama Pondok_id5112"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; Semua hak dilindungi 2026 Nama Pondok</p>
+    </div>
+</footer>
+
+<a href="https://wa.me/628XXXXXXXXXX" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="static/js/global-nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Memuat Artikel... - Nama Pondok</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="static/js/pirman.js"></script>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="loader-content">
+            <img src="static/img/logo.png" alt="Logo almamater" class="loader-logo-modern">
+            <div class="loader-text">NAMA PONDOK</div>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +62 XXX XXXX XXXX</span>
+                <span><i class="fas fa-envelope"></i> info@Nama Pondok.sch.id</span>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/pesantren_Nama Pondok/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@Nama Pondok_id5112"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="container nav-mobile-wrapper">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="line"></span><span class="line"></span><span class="line"></span>
+            </div>
+            <div class="logo"><img src="static/img/logo.png" alt="Logo"></div>
+            <div class="search-icon-mobile"><i class="fas fa-search"></i></div>
+            <ul class="nav-links" id="nav-list">
+                <li><a href="index.html">Beranda</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-btn">Tentang <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="tentang.html">Profil Pondok</a></li>
+                        <li><a href="sejarah.html">Sejarah Yayasan</a></li>
+                        <li><a href="cabang.html">Kampus Cabang</a></li>
+                    </ul>
+                </li>
+                <li><a href="pendidikan.html">Pendidikan</a></li>
+                <li><a href="warta.html">Warta</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+            </ul>
+<!-- INI BUAT SEARCH OVERLAY -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-bar-container">
+                <input type="text" id="searchInput" placeholder="Cari tulisan atau santri...">
+                <button id="closeSearch"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+<!-- INI SEARCH SUGGESTIONS -->
+        <div id="searchSuggestions" class="suggestions-box"></div>
+        </nav>
+    </header>
+
+    <section class="hero-artik">
+        <div class="herooo-overlay">
+            <p id="articleTag">Mingguan Menulis</p>
+            <h1 id="bigTitle">Memuat Judul...</h1>
+            <p>Perguruan Islam Pesantren Nama Pondok</p>
+            <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">
+                Oleh <strong id="authorName">...</strong> • <span id="articleDate">...</span>
+            </p>
+        </div>
+    </section>
+
+    <section class="isi-artikel">
+        <div class="main-wrapper">
+            <main class="content-left">
+                <div class="article-image-container">
+                    <img src="" alt="Foto Artikel" class="main-article-img" id="mainImage">
+                </div>
+                <div id="articleBody" class="article-text-render">
+                    <p>Sedang mengambil tulisan santri...</p>
+                </div>
+            </main>
+
+            <aside class="sidebar-right">
+                <h3 class="sidebar-title">Artikel Lainnya</h3>
+                <div class="sidebar-grid" id="sidebarGrid">
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; Semua hak dilindungi 2026 Nama Pondok</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/628XXXXXXXXXX" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+<script src="static/js/global-nav2.js"></script>
+<script src="static/js/ar.js"></script>
+</body>
+
+</html>

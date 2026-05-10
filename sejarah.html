@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Nama Pondok</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="static/js/pirman.js"></script>
+</head>
+<body>
+    <!-- buat animasi loading -->
+    <div class="loader-wrapper">
+        <div class="loader-content">
+            <img src="static/img/logo.png" alt="Logo almamater" class="loader-logo-modern">
+            <div class="loader-text">NAMA PONDOK</div>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <header>
+    <nav class="container nav-mobile-wrapper">
+        <div class="menu-toggle" id="mobile-menu">
+           <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+
+        <div class="logo">
+            <img src="static/img/logo.png" alt="Logo">
+        </div>
+
+        <div class="search-icon-mobile">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <ul class="nav-links" id="nav-list">
+            <li><a href="index.html">Beranda</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-btn">Tentang <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="tentang.html">Profil Pondok</a></li>
+                    <li><a href="sejarah.html">Sejarah Yayasan</a></li>
+                    <li><a href="cabang.html">Kampus Cabang</a></li>
+                </ul>
+            </li>
+            <li><a href="pendidikan.html">Pendidikan</a></li>
+            <li><a href="warta.html">Warta</a></li>
+            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+        </ul>
+<!-- INI BUAT SEARCH OVERLAY -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-bar-container">
+                <input type="text" id="searchInput" placeholder="Cari tulisan atau santri...">
+                <button id="closeSearch"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+<!-- INI SEARCH SUGGESTIONS -->
+        <div id="searchSuggestions" class="suggestions-box"></div>
+    </nav>
+    </header>
+
+
+    <section class="tentang-kami">
+    <div class="container-artikel">
+        <h2>Sejarah Pondok Pesantren Nama Pondok</h2>
+        
+        <div class="artikel-wrapper">
+            <div class="foto-wrap-kanan">
+                <img src="static/img/almun.jpg" alt="Kegiatan Santri">
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br><br>
+            </p>
+
+            <div class="foto-wrap-kiri">
+                <img src="static/img/almon.png" alt="Santri Belajar">
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="lokasi-map">
+    <div class="container">
+        <div class="map-header">
+            <h3>Lokasi Pesantren</h3>
+            <p>Jl. Pulang, Kemana, Kesana</p>
+        </div>
+        <div class="map-wrapper">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!4v1776254136975!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0VtX2l4cXdF!2m2!1d48.8583700925299!2d2.29448130096829!3f0.15762805129975277!4f34.45127774063613!5f0.4000000000000002"
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-bottom">
+        <p>&copy; Semua hak dilindungi 2026 Nama Pondok</p>
+    </div>
+</footer>
+
+<script src="static/js/global-nav.js"></script>
+</body>
+</html>
