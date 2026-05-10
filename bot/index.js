@@ -183,6 +183,9 @@ async function getUpdates() {
 // GROQ (DENGAN DATA GOOGLE)
 // =======================
 async function panggilGroq(prompt, infoInternet) {
+  console.log("--- DATA YANG DITERIMA DARI GOOGLE ---");
+  console.log(infoInternet); // Ini biar kelihatan di Railway Logs datanya masuk atau nggak
+  console.log("---------------------------------------");
   const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
     method: "POST",
     headers: {
@@ -194,22 +197,22 @@ async function panggilGroq(prompt, infoInternet) {
       messages: [
         {
           role: "system",
-          content: `Tulis berita pesantren/umum formal berdasarkan DATA INTERNET yang diberikan. JANGAN MENGARANG FAKTA.
-
-WAJIB FORMAT:
-JUDUL: ...
-RINGKASAN: ...
-ISI: ...
-
-ATURAN:
-Ringkasan maksimal 2 kalimat. Jangan keluar dari format.
-dalam kolom isi tambahkan: <p> untuk paragraf baru atau garis baru, dan gunakan <b> atau <strong> untuk bold. Jangan buat format lain selain yang diminta.
-contoh:
-<p><b>KOTA</b> – Paragraf</p>`
+          content: `Kamu adalah jurnalis FAKTUAL.
+          Tugasmu: Menulis berita hanya berdasarkan DATA INTERNET yang diberikan.
+          
+          ⚠️ LARANGAN KERAS:
+          1. JANGAN PERNAH membuat nama tokoh fiksi (seperti Aldis Burger dll).
+          2. JANGAN PERNAH menghubungkan ke pesantren jika di data internet tidak ada hubungannya dengan pesantren.
+          3. JIKA DATA INTERNET KOSONG atau tidak relevan, cukup balas dengan: "MAAF, DATA TIDAK DITEMUKAN DI GOOGLE. SAYA TIDAK MAU HALUSINASI."
+          
+          FORMAT WAJIB:
+          JUDUL: ...
+          RINGKASAN: ...
+          ISI: ... (Gunakan <p> dan <b>)`
         },
         {
           role: "user",
-          content: `REFERENSI DATA INTERNET:\n${infoInternet}\n\nPermintaan Judul/Topik: ${prompt}`
+          content: `DATA INTERNET DARI GOOGLE:\n${infoInternet}\n\nTopik yang dicari: ${prompt}`
         }
       ],
       temperature: 0.2 // Diturunkan supaya AI tidak berimajinasi (halusinasi)
