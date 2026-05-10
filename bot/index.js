@@ -1,1 +1,272 @@
-const backpress_0x4d86a2=backpress_0x3a35;(function(_0x4de64c,_0x47c50a){const _0x193689=backpress_0x3a35,_0x1db514=_0x4de64c();while(!![]){try{const _0x462800=parseInt(_0x193689(0xb7))/0x1*(parseInt(_0x193689(0xc9))/0x2)+parseInt(_0x193689(0xb2))/0x3*(-parseInt(_0x193689(0xa4))/0x4)+-parseInt(_0x193689(0xf5))/0x5*(parseInt(_0x193689(0xef))/0x6)+-parseInt(_0x193689(0xf6))/0x7*(-parseInt(_0x193689(0xdd))/0x8)+parseInt(_0x193689(0xd7))/0x9*(-parseInt(_0x193689(0xf0))/0xa)+-parseInt(_0x193689(0xf8))/0xb+parseInt(_0x193689(0xa6))/0xc;if(_0x462800===_0x47c50a)break;else _0x1db514['push'](_0x1db514['shift']());}catch(_0x14887c){_0x1db514['push'](_0x1db514['shift']());}}}(backpress_0x6b5a,0xdf17b),require(backpress_0x4d86a2(0xd9))[backpress_0x4d86a2(0xb9)]());function backpress_0x6b5a(){const _0x12791a=['ERROR\x20FETCH:','(((.+)+)+)+$','pMdIa','POST','kUpNn','stringify','368SIhFnz','choices','51387636oYhljT','ebBQr','uYOHN','constructor','/sendMessage','search','\x0a\x0aKirim\x20link\x20gambar\x20sebelum\x20FIX','Groq\x20error:','fRFbw','❌\x20Error\x20AI','action','Belum\x20ada\x20draft\x20yang\x20dibuat,\x20kirim\x20perintah\x20cari:\x20judul\x20berita\x20terlebih\x20dahulu','59583PwhkEE','chain','call','chat','Tulis\x20berita\x20pesantren\x20formal\x20dengan\x20format\x20WAJIB:\x0a\x0aJUDUL:\x20...\x0aRINGKASAN:\x20...\x0aISI:\x20...\x0a\x0aATURAN:\x0aRingkasan\x20maksimal\x202\x20kalimat.\x20Jangan\x20keluar\x20dari\x20format.\x0adalam\x20kolom\x20isi\x20tambahkan:\x20<p>\x20untuk\x20paragraf\x20baru\x20atau\x20garis\x20baru,\x20dan\x20gunakan\x20<b>\x20atau\x20<strong>\x20untuk\x20bold.\x20Jangan\x20buat\x20format\x20lain\x20selain\x20yang\x20diminta.\x0acontoh:\x0a<p><b>MISSISSIPPI</b>\x20–\x20\x20Paragraf</p>\x0a<p>PParagraf</p>','769eNBHYh','XHxxX','config','\x0a\x0aKetik\x20FIX\x20(Huruf\x20Besar\x20Semua)\x20untuk\x20publish','PZjGy','lumAE','❌\x20Akses\x20ditolak','🔍\x20Memuat\x20Artikel...','result','init','toString','llama-3.3-70b-versatile','counter','rGICc','Kirim\x20link\x20gambar\x20terlebih\x20dahulu\x20sebelum\x20FIX','test','string','stateObject','1170DBZkZa','trim','34567ujhbvfrt','replace','while\x20(true)\x20{}','Cari:','🚀\x20Artikel\x20beserta\x20Gambar\x20Berhasil\x20Diupload!','json','raQbb','function\x20*\x5c(\x20*\x5c)','gger','startsWith','length','addWarta','441McqnZh','\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)','dotenv','log','Respon\x20Groq\x20invalid','RESPONSE\x20APPS\x20SCRIPT:','944XJBWzp','ktCsY','getUpdates\x20error:','https://api.telegram.org/bot','match','apply','/getUpdates?offset=','{}.constructor(\x22return\x20this\x22)(\x20)','❌\x20Telegram\x20error:','SSsYl','application/json','return\x20(function()\x20','tes','input','system','text','message','setInterval','1203426NTkwsf','289010Evbmgh','FjipS','lbTZJ','drwdS','cZtpO','5BqqjxG','14294evfDjf','isArray','6769455znakZb'];backpress_0x6b5a=function(){return _0x12791a;};return backpress_0x6b5a();}const TOKEN=process.env.TELEGRAM_TOKEN;(function(){const _0xd20a94=backpress_0x4d86a2,_0x4fc33b=function(){const _0x4e36fb=backpress_0x3a35;let _0x393270;try{if(_0x4e36fb(0xb8)===_0x4e36fb(0xa0))throw new _0x13e79c(_0x4e36fb(0xdb));else _0x393270=Function(_0x4e36fb(0xe8)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x1a97c2){_0x393270=window;}return _0x393270;},_0x1927f8=_0x4fc33b();_0x1927f8[_0xd20a94(0xee)](_0x3f68e7,0x3e8);}());const GROQ_API_KEY=process.env.GROQ_API_KEY,APPS_SCRIPT_URL=process.env.APPS_SCRIPT_URL,ADMIN_ID=process.env.ADMIN_ID;let offset=0x0,lastDraft='',pendingImage=![],imageUrl='';async function getUpdates(){const _0x218409=backpress_0x4d86a2;try{if(_0x218409(0xbc)!==_0x218409(0xbc))_0x191034=_0x441349(_0x218409(0xe8)+_0x218409(0xe4)+');')();else{const _0x2f758d=await fetch(_0x218409(0xe0)+TOKEN+_0x218409(0xe3)+offset),_0x1bb3a3=await _0x2f758d['json']();if(!_0x1bb3a3['ok']){console[_0x218409(0xda)](_0x218409(0xe5),_0x1bb3a3);return;}if(!Array[_0x218409(0xf7)](_0x1bb3a3[_0x218409(0xbf)]))return;for(const _0x1540d5 of _0x1bb3a3['result']){offset=_0x1540d5['update_id']+0x1;const _0x5b82f6=_0x1540d5[_0x218409(0xed)];if(!_0x5b82f6)continue;const _0x2aa9cd=_0x5b82f6[_0x218409(0xb5)]['id'],_0x5a1d76=_0x5b82f6[_0x218409(0xec)]||'';if(_0x2aa9cd['toString']()!==ADMIN_ID['toString']()){if(_0x218409(0xa8)!==_0x218409(0xa8)){if(_0x1e3764)return _0x31eec2;else _0x4268a2(0x0);}else{await sendMessage(_0x2aa9cd,_0x218409(0xbd));continue;}}if(_0x5a1d76===_0x218409(0xe9))await sendMessage(_0x2aa9cd,'✅\x20bot\x20nyala');else{if(_0x5a1d76[_0x218409(0xd4)](_0x218409(0xce))){const _0xf791ce=_0x5a1d76[_0x218409(0xcc)]('Cari:','')['trim']();await sendMessage(_0x2aa9cd,_0x218409(0xbe));try{if(_0x218409(0xe6)==='NLZxY'){const _0xd83c62=_0x3948d6['match'](/RINGKASAN\s*:\s*([\s\S]*?)(?=\n\s*ISI\s*:|$)/i);return _0xd83c62?_0xd83c62[0x1]['trim']():'';}else{const _0x586b00=await panggilGroq(_0xf791ce);lastDraft=_0x586b00,await sendMessage(_0x2aa9cd,'📝\x20DRAF:\x0a\x0a'+_0x586b00+_0x218409(0xac));}}catch(_0x5c57e1){console['log'](_0x218409(0xad),_0x5c57e1),await sendMessage(_0x2aa9cd,_0x218409(0xaf));}}else{if(lastDraft&&/^https?:\/\/.+\.(jpg|jpeg|png|webp)$/i['test'](_0x5a1d76))imageUrl=_0x5a1d76,pendingImage=!![],await sendMessage(_0x2aa9cd,'🖼️\x20Gambar\x20diterima:\x0a'+imageUrl+_0x218409(0xba));else{if(_0x5a1d76==='FIX'){if('ciZYs'!=='ciZYs'){const _0xf00e92=new _0x171557(_0x218409(0xd2)),_0x2020b3=new _0x1e2fbb('\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)','i'),_0x32bf3e=_0x31f0ef(_0x218409(0xc0));!_0xf00e92[_0x218409(0xc6)](_0x32bf3e+_0x218409(0xb3))||!_0x2020b3[_0x218409(0xc6)](_0x32bf3e+_0x218409(0xea))?_0x32bf3e('0'):_0x8bf24c();}else{if(!lastDraft){await sendMessage(_0x2aa9cd,_0x218409(0xb1));continue;}if(!pendingImage||!imageUrl){await sendMessage(_0x2aa9cd,_0x218409(0xc5));continue;}lastDraft=lastDraft[_0x218409(0xcc)](/📝 DRAF:\s*/i,'')[_0x218409(0xca)]();const _0x29f1bd=ambilJudul(lastDraft),_0x38c1e3=ambilRingkasan(lastDraft),_0x2913bb=ambilIsi(lastDraft);console[_0x218409(0xda)]({'judul':_0x29f1bd,'ringkasan':_0x38c1e3,'isi':_0x2913bb,'gambar':imageUrl});try{const _0x29939f=await fetch(APPS_SCRIPT_URL,{'method':_0x218409(0xa1),'headers':{'Content-Type':_0x218409(0xe7)},'body':JSON['stringify']({'action':_0x218409(0xd6),'trtyjfk':_0x218409(0xcb),'judul':_0x29f1bd,'isi':_0x2913bb,'ringkasan':_0x38c1e3,'gambar':imageUrl})}),_0x14c7f8=await _0x29939f['text']();console[_0x218409(0xda)](_0x218409(0xdc),_0x14c7f8),await sendMessage(_0x2aa9cd,_0x218409(0xcf)),lastDraft='',pendingImage=![],imageUrl='';}catch(_0x105bdd){console['log'](_0x218409(0xf9),_0x105bdd),await sendMessage(_0x2aa9cd,'❌\x20Gagal\x20kirim\x20ke\x20server');}}}}}}}}}catch(_0x45f65f){console[_0x218409(0xda)](_0x218409(0xdf),_0x45f65f);}}async function panggilGroq(_0x579d75){const _0x3b5baa=backpress_0x4d86a2,_0x39808d=await fetch('https://api.groq.com/openai/v1/chat/completions',{'method':_0x3b5baa(0xa1),'headers':{'Authorization':'Bearer\x20'+GROQ_API_KEY,'Content-Type':_0x3b5baa(0xe7)},'body':JSON[_0x3b5baa(0xa3)]({'model':_0x3b5baa(0xc2),'messages':[{'role':_0x3b5baa(0xeb),'content':_0x3b5baa(0xb6)},{'role':'user','content':_0x579d75}],'temperature':0.7})}),_0x4766d4=await _0x39808d[_0x3b5baa(0xd0)]();if(!_0x4766d4['choices']||!_0x4766d4[_0x3b5baa(0xa5)][0x0]){if(_0x3b5baa(0xf1)!==_0x3b5baa(0xf3))throw new Error(_0x3b5baa(0xdb));else return!![];}return _0x4766d4[_0x3b5baa(0xa5)][0x0][_0x3b5baa(0xed)]['content'];}async function sendMessage(_0x243276,_0x4793ff){const _0x423f94=backpress_0x4d86a2;await fetch(_0x423f94(0xe0)+TOKEN+_0x423f94(0xaa),{'method':_0x423f94(0xa1),'headers':{'Content-Type':'application/json'},'body':JSON[_0x423f94(0xa3)]({'chat_id':_0x243276,'text':_0x4793ff})});}function ambilJudul(_0x2830a0){const _0x14fec6=backpress_0x4d86a2,_0x2ee05e=_0x2830a0[_0x14fec6(0xe1)](/JUDUL\s*:\s*(.+)/i);return _0x2ee05e?_0x2ee05e[0x1][_0x14fec6(0xca)]():'';}function backpress_0x3a35(_0x210cfd,_0x378beb){_0x210cfd=_0x210cfd-0xa0;const _0xf9df03=backpress_0x6b5a();let _0x3f68e7=_0xf9df03[_0x210cfd];return _0x3f68e7;}function ambilRingkasan(_0x441d19){const _0x44120d=backpress_0x4d86a2,_0x5a372b=_0x441d19[_0x44120d(0xe1)](/RINGKASAN\s*:\s*([\s\S]*?)(?=\n\s*ISI\s*:|$)/i);return _0x5a372b?_0x5a372b[0x1][_0x44120d(0xca)]():'';}function ambilIsi(_0x5e8219){const _0xc87202=backpress_0x4d86a2,_0x16f72d=_0x5e8219[_0xc87202(0xe1)](/ISI\s*:\s*([\s\S]*)/i);return _0x16f72d?_0x16f72d[0x1][_0xc87202(0xca)]():'';}async function main(){const _0x1d2d41=backpress_0x4d86a2,_0x4a0887=(function(){let _0x592660=!![];return function(_0x681068,_0x5e869f){const _0x5a7ee5=_0x592660?function(){const _0x3e6381=backpress_0x3a35;if(_0x3e6381(0xd1)!==_0x3e6381(0xf4)){if(_0x5e869f){if('ktCsY'!==_0x3e6381(0xde))(function(){return![];}[_0x3e6381(0xa9)]('debu'+_0x3e6381(0xd3))[_0x3e6381(0xe2)](_0x3e6381(0xc8)));else{const _0x2f85bd=_0x5e869f['apply'](_0x681068,arguments);return _0x5e869f=null,_0x2f85bd;}}}else _0x31a5c6(this,function(){const _0x5c6ad3=_0x3e6381,_0x223011=new _0x1f7c6d(_0x5c6ad3(0xd2)),_0x35148a=new _0x2d1f7a(_0x5c6ad3(0xd8),'i'),_0x2f3973=_0x35a304(_0x5c6ad3(0xc0));!_0x223011[_0x5c6ad3(0xc6)](_0x2f3973+'chain')||!_0x35148a[_0x5c6ad3(0xc6)](_0x2f3973+_0x5c6ad3(0xea))?_0x2f3973('0'):_0x3b45f9();})();}:function(){};return _0x592660=![],_0x5a7ee5;};}()),_0xf4185=_0x4a0887(this,function(){const _0x474c47=backpress_0x3a35;return _0xf4185[_0x474c47(0xc1)]()['search'](_0x474c47(0xfa))[_0x474c47(0xc1)]()[_0x474c47(0xa9)](_0xf4185)['search'](_0x474c47(0xfa));});_0xf4185();const _0x52566d=(function(){const _0x564720=backpress_0x3a35;if('PZjGy'===_0x564720(0xbb)){let _0x59d9c6=!![];return function(_0x472dd4,_0x1cda96){const _0x7f367b=_0x59d9c6?function(){const _0x32cb26=backpress_0x3a35;if(_0x1cda96){const _0xa2283c=_0x1cda96[_0x32cb26(0xe2)](_0x472dd4,arguments);return _0x1cda96=null,_0xa2283c;}}:function(){};return _0x59d9c6=![],_0x7f367b;};}else{let _0x53535b;try{_0x53535b=_0x1c9e34(_0x564720(0xe8)+_0x564720(0xe4)+');')();}catch(_0x4ccbdc){_0x53535b=_0xfd028c;}return _0x53535b;}}());(function(){_0x52566d(this,function(){const _0x209df7=backpress_0x3a35,_0x1ad630=new RegExp(_0x209df7(0xd2)),_0x2a6c5a=new RegExp(_0x209df7(0xd8),'i'),_0x1006a2=_0x3f68e7(_0x209df7(0xc0));!_0x1ad630['test'](_0x1006a2+_0x209df7(0xb3))||!_0x2a6c5a['test'](_0x1006a2+_0x209df7(0xea))?_0x1006a2('0'):_0x3f68e7();})();}());while(!![]){if(_0x1d2d41(0xae)==='uWSPk')return _0x139450['toString']()[_0x1d2d41(0xab)](_0x1d2d41(0xfa))[_0x1d2d41(0xc1)]()[_0x1d2d41(0xa9)](_0x2c6e19)[_0x1d2d41(0xab)](_0x1d2d41(0xfa));else await getUpdates(),await new Promise(_0x472df7=>setTimeout(_0x472df7,0x7d0));}}main();function _0x3f68e7(_0x5d3a89){function _0x3227e5(_0x5d6bde){const _0x4a9a8e=backpress_0x3a35;if('lbTZJ'!==_0x4a9a8e(0xf2)){_0x43a2ed[_0x4a9a8e(0xda)](_0x4a9a8e(0xe5),_0x52c7f6);return;}else{if(typeof _0x5d6bde===_0x4a9a8e(0xc7)){if(_0x4a9a8e(0xa7)===_0x4a9a8e(0xa2))_0x30a017('0');else return function(_0x243490){}[_0x4a9a8e(0xa9)](_0x4a9a8e(0xcd))[_0x4a9a8e(0xe2)](_0x4a9a8e(0xc3));}else _0x4a9a8e(0xc4)!==_0x4a9a8e(0xc4)?_0x5ee86c():(''+_0x5d6bde/_0x5d6bde)[_0x4a9a8e(0xd5)]!==0x1||_0x5d6bde%0x14===0x0?function(){return!![];}[_0x4a9a8e(0xa9)]('debu'+_0x4a9a8e(0xd3))[_0x4a9a8e(0xb4)](_0x4a9a8e(0xb0)):function(){return![];}[_0x4a9a8e(0xa9)]('debu'+'gger')[_0x4a9a8e(0xe2)](_0x4a9a8e(0xc8));_0x3227e5(++_0x5d6bde);}}try{if(_0x5d3a89)return _0x3227e5;else _0x3227e5(0x0);}catch(_0x443d66){}}
+require('dotenv').config(); 
+
+const TOKEN = process.env.TELEGRAM_TOKEN;
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
+const APPS_SCRIPT_URL = process.env.APPS_SCRIPT_URL;
+const ADMIN_ID = process.env.ADMIN_ID;
+const SERPER_API_KEY = process.env.SERPER_API_KEY; // Tambahkan key ini di Railway
+
+let offset = 0;
+let lastDraft = "";
+let pendingImage = false;
+let imageUrl = "";
+
+// ==========================================
+// FUNGSI SEARCH GOOGLE (SERPER.DEV)
+// ==========================================
+async function cariDiGoogle(query) {
+  try {
+    const res = await fetch("https://google.serper.dev/search", {
+      method: "POST",
+      headers: {
+        "X-API-KEY": SERPER_API_KEY,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ 
+        q: query, 
+        gl: "id",
+        hl: "id" 
+      }) 
+    });
+    const data = await res.json();
+    
+    if (!data.organic || data.organic.length === 0) {
+      return "Tidak ditemukan informasi di internet.";
+    }
+
+    // Mengambil snippet dari Google agar AI tahu fakta aslinya
+    return data.organic
+      .slice(0, 5)
+      .map(item => `Sumber: ${item.title}\nDetail: ${item.snippet}`)
+      .join("\n\n");
+  } catch (err) {
+    console.log("Serper Error:", err);
+    return "Gagal mengambil data internet.";
+  }
+}
+
+// =======================
+// AMBIL UPDATE TELEGRAM
+// =======================
+async function getUpdates() {
+  try {
+    const res = await fetch(`https://api.telegram.org/bot${TOKEN}/getUpdates?offset=${offset}`);
+    const data = await res.json();
+
+    if (!data.ok) {
+      console.log("❌ Telegram error:", data);
+      return;
+    }
+
+    if (!Array.isArray(data.result)) return;
+
+    for (const update of data.result) {
+      offset = update.update_id + 1;
+
+      const msg = update.message;
+      if (!msg) continue;
+
+      const chatId = msg.chat.id;
+      const text = msg.text || "";
+
+      if (chatId.toString() !== ADMIN_ID.toString()) {
+        await sendMessage(chatId, "❌ Akses ditolak");
+        continue;
+      }
+
+      // TES
+      if (text === "tes") {
+        await sendMessage(chatId, "✅ bot nyala");
+      }
+
+      // CARI AI (DENGAN GOOGLE SEARCH)
+      else if (text.startsWith("Cari:")) {
+        const query = text.replace("Cari:", "").trim();
+
+        await sendMessage(chatId, `🔍 Sedang mencari fakta internet tentang "${query}"...`);
+
+        try {
+          // Langkah 1: Cari dulu di Google
+          const infoDariGoogle = await cariDiGoogle(query);
+
+          // Langkah 2: Kasih datanya ke Groq
+          const hasil = await panggilGroq(query, infoDariGoogle);
+          lastDraft = hasil;
+
+          await sendMessage(
+            chatId,
+            `📝 DRAF VALID (BERDASARKAN GOOGLE):\n\n${hasil}\n\nKirim link gambar sebelum FIX`
+          );
+        } catch (err) {
+          console.log("Groq/Search error:", err);
+          await sendMessage(chatId, "❌ Error saat memproses data");
+        }
+      }
+
+      // LINK GAMBAR
+      else if (
+        lastDraft &&
+        /^https?:\/\/.+\.(jpg|jpeg|png|webp)$/i.test(text)
+      ) {
+        imageUrl = text;
+        pendingImage = true;
+
+        await sendMessage(
+          chatId,
+          `🖼️ Gambar diterima:\n${imageUrl}\n\nKetik FIX (Huruf Besar Semua) untuk publish`
+        );
+      }
+
+      // FIX
+      else if (text === "FIX") {
+        if (!lastDraft) {
+          await sendMessage(chatId, "Belum ada draft yang dibuat, kirim perintah cari: judul berita terlebih dahulu");
+          continue;
+        }
+
+        if (!pendingImage || !imageUrl) {
+          await sendMessage(chatId, "Kirim link gambar terlebih dahulu sebelum FIX");
+          continue;
+        }
+
+        lastDraft = lastDraft.replace(/📝 DRAF:\s*/i, "").trim();
+
+        const judul = ambilJudul(lastDraft);
+        const ringkasan = ambilRingkasan(lastDraft);
+        const isi = ambilIsi(lastDraft);
+
+        console.log({
+          judul,
+          ringkasan,
+          isi,
+          gambar: imageUrl
+        });
+
+        try {
+          const res = await fetch(APPS_SCRIPT_URL, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              action: "addWarta",
+              trtyjfk: "34567ujhbvfrt",
+              judul: judul,
+              isi: isi,
+              ringkasan: ringkasan,
+              gambar: imageUrl
+            })
+          });
+
+          const resultText = await res.text();
+
+          console.log("RESPONSE APPS SCRIPT:", resultText);
+
+          await sendMessage(chatId, "🚀 Artikel beserta Gambar Berhasil Diupload!");
+
+          lastDraft = "";
+          pendingImage = false;
+          imageUrl = "";
+
+        } catch (err) {
+          console.log("ERROR FETCH:", err);
+          await sendMessage(chatId, "❌ Gagal kirim ke server");
+        }
+      }
+    }
+  } catch (err) {
+    console.log("getUpdates error:", err);
+  }
+}
+
+// =======================
+// GROQ (DENGAN DATA GOOGLE)
+// =======================
+async function panggilGroq(prompt, infoInternet) {
+  const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${GROQ_API_KEY}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      model: "llama-3.3-70b-versatile",
+      messages: [
+        {
+          role: "system",
+          content: `Tulis berita pesantren/umum formal berdasarkan DATA INTERNET yang diberikan. JANGAN MENGARANG FAKTA.
+
+WAJIB FORMAT:
+JUDUL: ...
+RINGKASAN: ...
+ISI: ...
+
+ATURAN:
+Ringkasan maksimal 2 kalimat. Jangan keluar dari format.
+dalam kolom isi tambahkan: <p> untuk paragraf baru atau garis baru, dan gunakan <b> atau <strong> untuk bold. Jangan buat format lain selain yang diminta.
+contoh:
+<p><b>KOTA</b> – Paragraf</p>`
+        },
+        {
+          role: "user",
+          content: `REFERENSI DATA INTERNET:\n${infoInternet}\n\nPermintaan Judul/Topik: ${prompt}`
+        }
+      ],
+      temperature: 0.2 // Diturunkan supaya AI tidak berimajinasi (halusinasi)
+    })
+  });
+
+  const json = await res.json();
+
+  if (!json.choices || !json.choices[0]) {
+    throw new Error("Respon Groq invalid");
+  }
+
+  return json.choices[0].message.content;
+}
+
+// =======================
+// TELEGRAM SEND
+// =======================
+async function sendMessage(chatId, text) {
+  await fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      chat_id: chatId,
+      text: text
+    })
+  });
+}
+
+// =======================
+// PARSER
+// =======================
+function ambilJudul(teks) {
+  const match = teks.match(/JUDUL\s*:\s*(.+)/i);
+  return match ? match[1].trim() : "";
+}
+
+function ambilRingkasan(teks) {
+  const match = teks.match(/RINGKASAN\s*:\s*([\s\S]*?)(?=\n\s*ISI\s*:|$)/i);
+  return match ? match[1].trim() : "";
+}
+
+function ambilIsi(teks) {
+  const match = teks.match(/ISI\s*:\s*([\s\S]*)/i);
+  return match ? match[1].trim() : "";
+}
+
+// =======================
+// LOOP
+// =======================
+async function main() {
+  while (true) {
+    await getUpdates();
+    await new Promise(resolve => setTimeout(resolve, 2000));
+  }
+}
+
+main();
