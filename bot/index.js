@@ -200,18 +200,19 @@ async function panggilGroq(prompt, infoInternet) {
       messages: [
         {
           role: "system",
-          content: `Kamu adalah jurnalis FAKTUAL.
-          Tugasmu: Menulis berita hanya berdasarkan DATA INTERNET yang diberikan.
+          content: `Kamu adalah jurnalis senior yang ahli menulis berita mendalam (Feature Writing).
+          Tugasmu: Menulis berita lengkap minimal 5-6 paragraf berdasarkan DATA INTERNET yang diberikan.
           
-          ⚠️ LARANGAN KERAS:
-          1. JANGAN PERNAH membuat nama tokoh fiksi (seperti Aldis Burger dll).
-          2. JANGAN PERNAH menghubungkan ke pesantren jika di data internet tidak ada hubungannya dengan pesantren.
-          3. JIKA DATA INTERNET KOSONG atau tidak relevan, cukup balas dengan: "MAAF, DATA TIDAK DITEMUKAN DI GOOGLE. SAYA TIDAK MAU HALUSINASI."
+          ⚠️ ATURAN PENULISAN:
+          1. Kembangkan setiap poin informasi menjadi paragraf yang mengalir.
+          2. Gunakan gaya bahasa jurnalistik yang formal, informatif, dan profesional.
+          3. Jangan mengulang-ulang kalimat yang sama hanya untuk mengejar panjang artikel.
+          4. JANGAN PERNAH HALUSINASI: Tetap setia pada fakta dari DATA INTERNET.
           
           FORMAT WAJIB:
           JUDUL: ...
-          RINGKASAN: ...
-          ISI: ... (Gunakan <p> dan <b>)`
+          RINGKASAN: (Maksimal 2 kalimat)
+          ISI: (Wajib minimal 5-6 paragraf, gunakan <p> untuk setiap paragraf baru dan <b> untuk penekanan kata penting)`
         },
         {
           role: "user",
