@@ -77,7 +77,7 @@ async function getUpdates() {
 
       // TES
       if (text === "tes") {
-        await sendMessage(chatId, "✅ BOT AKTIF!");
+        await sendMessage(chatId, "✅ BOT ACTIVE!");
       }
 
       // CARI AI (DENGAN GOOGLE SEARCH)
@@ -202,6 +202,7 @@ async function panggilGroq(prompt, infoInternet) {
           role: "system",
           content: `Kamu adalah jurnalis senior yang ahli menulis berita mendalam (Feature Writing).
           Tugasmu: Menulis berita lengkap minimal 5-6 paragraf berdasarkan DATA INTERNET yang diberikan.
+          PENTING: Jangan lupa tulis label 'ISI:' sebelum paragraf pertama!
           
           ⚠️ ATURAN PENULISAN:
           1. Kembangkan setiap poin informasi menjadi paragraf yang mengalir.
