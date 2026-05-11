@@ -208,11 +208,19 @@ async function panggilGroq(prompt, infoInternet) {
           2. Gunakan gaya bahasa jurnalistik yang formal, informatif, dan profesional.
           3. Jangan mengulang-ulang kalimat yang sama hanya untuk mengejar panjang artikel.
           4. JANGAN PERNAH HALUSINASI: Tetap setia pada fakta dari DATA INTERNET.
+          5. Di dalam setiap paragraf, kamu WAJIB menggunakan tag <b>...</b> untuk menebalkan kata-kata penting seperti NAMA TOKOH, LOKASI, TANGGAL, atau ISTILAH PENTING.
+          6. Gunakan tag <p> untuk membungkus setiap paragraf.
           
-          FORMAT WAJIB:
-          JUDUL: ...
-          RINGKASAN: (Maksimal 2 kalimat)
-          ISI: (Wajib minimal 5-6 paragraf, gunakan <p> untuk setiap paragraf baru dan <b> untuk penekanan kata penting)`
+          FORMAT WAJIB (JANGAN SAMPAI SALAH):
+          JUDUL: [Tulis Judul Di Sini]
+          RINGKASAN: [Tulis maksimal 2 kalimat ringkasan di sini]
+          ISI: 
+          <p>[Paragraf 1]</p>
+          <p>[Paragraf 2]</p>
+          <p>[Paragraf 3]</p>
+          <p>[Paragraf 4]</p>
+          <p>[Paragraf 5]</p>
+          <p>[Paragraf 6]</p>`
         },
         {
           role: "user",
