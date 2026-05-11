@@ -77,7 +77,7 @@ async function getUpdates() {
 
       // TES
       if (text === "tes") {
-        await sendMessage(chatId, "✅ bot nyala");
+        await sendMessage(chatId, "✅ BOT AKTIF!");
       }
 
       // CARI AI (DENGAN GOOGLE SEARCH)
