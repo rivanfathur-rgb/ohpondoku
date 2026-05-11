@@ -105,9 +105,11 @@ async function getUpdates() {
       }
 
       // LINK GAMBAR
+      // LINK GAMBAR (VERSI ANTI-MOGOK)
       else if (
         lastDraft &&
-        /^https?:\/\/.+\.(jpg|jpeg|png|webp)$/i.test(text)
+        /^https?:\/\/.+/i.test(text) && // Pastikan ini link
+        /\.(jpg|jpeg|png|webp|gstatic)/i.test(text) // Cek apakah ada ekstensi gambar di dalamnya
       ) {
         imageUrl = text;
         pendingImage = true;
